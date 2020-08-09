@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container, .nav-links, .search, .cart{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-weight: 500;
+}
+
+.nav{
+    
+}
+
+.top-nav{
+    flex: 2;
+
+}
+
+.nav-links{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+
+.search{
+    background-color: darkgreen;
+    height: 70%;
+    flex: 4;
+    justify-content: flex-start;
+    
+}
+
+.search-box, .search-box-button{
+    display: flex;
+}
+.search-box{
+    flex-grow: 1;
+    font-size: 1.1em;
+    padding-left: 8px;
+}
+.search-box-button{
+    width: 45px;
+    border-left: 0px;
+    background-image: url(./Images/search_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+.cart{
+    flex: 1;
+}
+.cart img{
+    width: 45px;
+}
