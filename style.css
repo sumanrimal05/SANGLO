@@ -40,14 +40,14 @@ header{
 }
 
 .search{
-    background-color: darkgreen;
+    background-color:rgb(240, 224, 76);
     height: 70%;
     flex: 4;
     justify-content: flex-start;
-    
 }
 
 .search-box{
+    border-right: 0px;
     flex-grow: 1;
     font-size: 1.1em;
     padding-left: 8px;
