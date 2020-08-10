@@ -12,8 +12,8 @@ header{
     display: flex;
     width: 100%;
     height: 10vh;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
 .logo-container, .nav-links, .search, .cart{
@@ -22,19 +22,21 @@ header{
 }
 
 .logo-container{
+    background-color: brown;
+    justify-content: center;
     flex: 1;
 }
 
 .logo{
-    margin-left: 10px;
     font-weight: 500;
 }
 
 .top-nav{
-    flex: 2;
+    flex: 3;
 }
 
 .nav-links{
+    background-color: chartreuse;
     justify-content: space-around;
     list-style: none;
 }
@@ -45,23 +47,31 @@ header{
 .search{
     background-color:rgb(240, 224, 76);
     height: 70%;
-    flex: 4;
+    flex: 5;
     justify-content: flex-start;
 }
 
 .search-box{
+    background-color: cornflowerblue;
     border-right: 0px;
     flex-grow: 1;
     font-size: 1.1em;
     padding-left: 8px;
 }
+
+.search-box:focus{
+    outline: orange;
+}
+
 .search-box-button{
     width: 45px;
     border-left: 0px;
     background: url(./Images/search_icon.svg) no-repeat center;
     background-size: 30px;
 }
+
 .cart{
+    background-color: cyan;
     justify-content: center;
     flex: 1;
 }
