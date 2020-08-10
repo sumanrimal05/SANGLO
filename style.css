@@ -28,6 +28,7 @@ header{
 }
 
 .logo{
+    min-width: 101px;
     font-weight: 500;
 }
 .search{
@@ -79,4 +80,15 @@ header{
 }
 .cart img{
     width: 45px;
+}
+
+@media screen and (max-width: 992px){
+    html{
+        
+    }
+}
+@media screen and (max-width: 600px){
+    html{
+        display: none;
+    }
 }
