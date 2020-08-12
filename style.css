@@ -188,7 +188,7 @@ body{
 
 @media screen and (max-width: 393px){
     .main-nav{
-        height: 12vh;
+        height: 15vh;
     }
     .logo{
         font-size:0.9em;
@@ -196,7 +196,6 @@ body{
 
     .nav-left{
         flex: 0 1;
-        width: 30%;
     }
     .nav-right{
     }
@@ -222,4 +221,11 @@ body{
     .cart img{
         width: 20px;
     }
+}
+@media screen and (max-width: 330px){
+    .main-nav{
+        height: 15vh;
+    }
+
+
 }
