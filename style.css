@@ -117,12 +117,11 @@ body{
         flex: 1 0;
     }
     .nav-left{
-        background-color: slategray;
         order: 0;
         justify-content: flex-start;
     }    
     .logo{
-        min-width: 50px;
+        min-width: 0px;
         margin-left: 5px;
         font-size:1.3em;
     }
@@ -131,7 +130,6 @@ body{
         order: 2;
     }
     .nav-right{
-        background-color: silver;
         order: 1;
         justify-content: flex-end;
        
@@ -152,13 +150,7 @@ body{
         width: 30px;
     }
 }
-/* @media screen and (max-width: 502px){
-    .nav-left{
-        background-color: seagreen;
-    }
-    .nav-right{
-        background-color: skyblue;
-    }
+@media screen and (max-width: 502px){
     .logo{
         min-width: 50px;
         font-size:1.1em;
@@ -193,12 +185,10 @@ body{
     } 
 
     .nav-left{
-        background-color:orange;
         flex: 0 1;
         width: 30%;
     }
     .nav-right{
-        background-color:red;
     }
     .burger-line{
         width: 15px;
@@ -222,4 +212,4 @@ body{
     .cart img{
         width: 20px;
     }
-} */
+}
