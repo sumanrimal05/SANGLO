@@ -8,31 +8,45 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+.main-nav{
     background-color: lightcoral;
     display: flex;
-    width: 100%;
     height: 10vh;
+    padding: 1% 2%;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-container, .nav-links, .search, .cart{
+.nav-left,.nav-right,.burger,.nav-links, .search, .cart{
     display: flex;
     
 }
 
-.logo-container{
+.burger{
+    display: none;
+    flex-direction: column;
+}
+
+.burger-line{
+    background-color: rgb(248, 248, 238);
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.nav-left{
     flex: 0 1 200px;
-    margin-left: 15px;
+    align-items: center;
 }
 
 .logo{
-    min-width: 101px;
+    
     font-weight: 500;
+    font-size: 1.5em;
 }
 .search{
-    height: 70%;
+    height: 50px;
     flex: 1 1 600px;
     justify-content: flex-start;
 }
@@ -57,38 +71,155 @@ header{
 
 .nav-right{
     flex: 0 1 500px;
-    display: flex;
     align-items: center;
 }
-.top-nav{
-    flex: 1;
+
+.nav-bar{
+    flex-grow: 1;
 }
 
 .nav-links{
     justify-content: space-around;
     list-style: none;
 }
-.nav-link{
-    text-decoration: none;
+.rt{
+    display: flex;
+    align-items: center;
 }
-
-
+.nav-link{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
 
 .cart{
     justify-content: flex-start;
-    margin-right: 15px;
+    
 }
 .cart img{
     width: 45px;
 }
 
-@media screen and (max-width: 992px){
-    html{
+@media screen and (max-width: 840px){
+    .main-nav{
+        height: 17vh;
+        align-items: center;
+        flex-wrap: wrap;
         
     }
-}
-@media screen and (max-width: 600px){
-    html{
-        display: none;
+
+    .burger{
+        display: block;
+    }
+
+    .nav-left, .nav-right{
+        padding-top: 7px;
+        flex: 1 0;
+    }
+    .nav-left{
+        background-color: slategray;
+        order: 0;
+        justify-content: flex-start;
+    }    
+    .logo{
+        min-width: 50px;
+        margin-left: 5px;
+        font-size:1.3em;
+    }
+    .search{
+        height: 40px;
+        order: 2;
+    }
+    .nav-right{
+        background-color: silver;
+        order: 1;
+        justify-content: flex-end;
+       
+    }
+    .nav-bar{
+        flex-grow: 0;
+    }
+
+    .nav-link{
+        font-size: 1.1em;
+        padding:10px;
+    }
+
+    .cart{
+        margin-left: 10px;
+    }
+    .cart img{
+        width: 30px;
     }
 }
+/* @media screen and (max-width: 502px){
+    .nav-left{
+        background-color: seagreen;
+    }
+    .nav-right{
+        background-color: skyblue;
+    }
+    .logo{
+        min-width: 50px;
+        font-size:1.1em;
+    } 
+    .burger-line{
+        width: 18px;
+        height: 2px;
+        margin: 3px;
+    }
+
+    .nav-link{
+        font-size: .8em;
+    }
+
+    .search{
+        height: 35px;
+        margin: 9px;
+        order: 2;
+    }
+    
+    .cart{
+        margin-right: 15px;
+    }
+    .cart img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .logo{
+        font-size:0.9em;
+    } 
+
+    .nav-left{
+        background-color:orange;
+        flex: 0 1;
+        width: 30%;
+    }
+    .nav-right{
+        background-color:red;
+    }
+    .burger-line{
+        width: 15px;
+        height: 1px;
+        margin: 3px;
+    }
+
+    .nav-link{
+        font-size: .7em;
+    }
+
+    .search{
+        height: 30px;
+        margin: 9px;
+        order: 2;
+    }
+    
+    .cart{
+        margin-right: 15px;
+    }
+    .cart img{
+        width: 20px;
+    }
+} */
